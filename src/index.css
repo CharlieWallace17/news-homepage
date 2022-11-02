@@ -1,17 +1,32 @@
+/* Global */
 @font-face {
-  font-family: "Inter";
-  src: local("Inter"), url(../public/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "Inter-Regular";
+  src: local("Inter"), url(../public/assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: local("Inter"), url(../public/assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Inter-ExtraBold";
+  src: local("Inter"), url(../public/assets/fonts/static/Inter-ExtraBold.ttf);
 }
 
 html {
   font-size: 15px;
-  font-family: "Inter";
+  font-family: "Inter-Regular";
 }
 
+body {
+  margin: 4rem;
+}
+
+/* Header  */
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 4rem;
   font-weight: 500;
 }
 
@@ -27,4 +42,20 @@ html {
 .header a {
   text-decoration: none;
   color: hsl(236, 13%, 42%);
+}
+
+/* MainCard */
+.mainCard {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.mainCard-text {
+  display: flex;
+}
+
+.mainCard-text h1 {
+  font-size: 5rem;
+  font-weight: 1100;
 }
