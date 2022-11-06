@@ -33,15 +33,15 @@ html {
   flex-direction: column;
   margin-top: 4rem;
   margin-bottom:4rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 /* Header  */
 .header {
   display: flex;
   justify-content: space-between;
-  font-weight: 500;
+  font-family: 'Inter-Bold';
   margin-bottom: 3rem;
 }
 
@@ -63,8 +63,11 @@ html {
 .mainCard {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  margin-right: 3rem;
+  width: 65%;
+}
+
+.mainCard img {
+  width: 800px;
 }
 
 .mainCard-text {
@@ -100,7 +103,7 @@ html {
   margin: 0;
   flex: 1;
   padding-right: 0;
-  padding-left: 200px;
+  padding-left: 155px;
 }
 
 .mainCard button {
@@ -116,6 +119,7 @@ html {
 .lead {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 /* Sidebar */
@@ -159,4 +163,48 @@ html {
 .sidebar,
 .sidebar p:last-of-type {
   border: none;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-card {
+  display: flex;
+  width: 30%;
+}
+
+.footer-card img {
+  width: 120px;
+  margin-right: 1.5rem;
+}
+
+.footer-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 225px;
+}
+
+.footer-card-text h2 {
+  font-family: 'Inter-Bold';
+  font-size: 1.8rem;
+  color: var(--grayish-blue);
+  margin: 0;
+}
+
+.footer-card-text h3 {
+  font-family: 'Inter-ExtraBold';
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+.footer-card-text p {
+  color: var(--dark-grayish-blue);
+  line-height: 2;
+  margin: 0;
+  width: 225px;
 }
