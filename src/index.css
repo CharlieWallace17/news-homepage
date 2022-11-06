@@ -31,7 +31,9 @@ html {
 .body {
   display: flex;
   flex-direction: column;
-  margin: 5rem;
+  margin: 6rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
 }
 
 /* Header  */
@@ -39,7 +41,7 @@ html {
   display: flex;
   justify-content: space-between;
   font-weight: 500;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .header ul {
@@ -60,21 +62,56 @@ html {
 .mainCard {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 65%;
+  margin-right: 3rem;
 }
 
 .mainCard-text {
   display: flex;
+  justify-content: space-between;
+}
+
+.mainCard img {
+
 }
 
 .mainCard-text h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-family: 'Inter-ExtraBold';
   color: var(--dark-blue);
+  line-height: 1;
+  padding: 0;
+  flex: 1;
+}
+
+.mainCard-text h1,
+.mainCard-text p {
+  margin-top: 3rem;
+  margin-right: -100px;
 }
 
 .mainCard-text p {
   color: var(--dark-grayish-blue);
+  line-height: 1.8;
+  width: 350px;
+  margin-bottom: 50px;
+}
+
+.mainCard-text div {
+  margin: 0;
+  flex: 1;
+  padding-right: 0;
+  padding-left: 200px;
+}
+
+.mainCard button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  font-family: 'Inter-Bold';
+  letter-spacing: 4px;
 }
 
 .lead {
@@ -86,6 +123,7 @@ html {
 .sidebar {
   background-color: var(--dark-blue);
   color: var(--off-white);
+  width: 35%;
 }
 
 .sidebar h2 {

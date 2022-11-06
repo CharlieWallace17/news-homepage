@@ -13,7 +13,7 @@ const MainCard = () => {
                         to put the power of the platforms back into the hands of
                         the people. But is it really fulfilling its promise?
                     </p>
-                    <button>Read more</button>
+                    <button>READ MORE</button>
                 </div>
             </div>
         </div>
