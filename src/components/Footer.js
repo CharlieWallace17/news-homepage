@@ -2,10 +2,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer-card'>
-                <img 
-                    src='assets/images/image-retro-pcs.jpg'
-                    alt='Web 3'
-                />
+                <img src='assets/images/image-retro-pcs.jpg' alt='Web 3' />
                 <div className='footer-card-text'>
                     <h2>01</h2>
                     <h3>Reviving Retro PCs</h3>
@@ -13,7 +10,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-card'>
-                <img 
+                <img
                     src='assets/images/image-top-laptops.jpg'
                     alt='Retro PCs'
                 />
@@ -24,7 +21,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-card'>
-                <img 
+                <img
                     src='assets/images/image-gaming-growth.jpg'
                     alt='Gaming Growth'
                 />
@@ -36,6 +33,6 @@ const Footer = () => {
             </div>
         </div>
     );
-}
+};
 
 export default Footer;

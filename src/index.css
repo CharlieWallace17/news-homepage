@@ -1,210 +1,226 @@
 /* Global */
 :root {
-  --soft-orange: hsl(35, 77%, 62%);
-  --soft-red: hsl(5, 85%, 63%);
-  --off-white: hsl(36, 100%, 99%);
-  --grayish-blue: hsl(233, 8%, 79%);
-  --dark-grayish-blue: hsl(236, 13%, 42%);
-  --dark-blue: hsl(240, 100%, 5%);
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --dark-blue: hsl(240, 100%, 5%);
 }
 
 @font-face {
-  font-family: "Inter-Regular";
-  src: local("Inter"), url(../public/assets/fonts/static/Inter-Regular.ttf);
+    font-family: 'Inter-Regular';
+    src: local('Inter'), url(../public/assets/fonts/static/Inter-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Inter-Bold";
-  src: local("Inter"), url(../public/assets/fonts/static/Inter-Bold.ttf);
+    font-family: 'Inter-Bold';
+    src: local('Inter'), url(../public/assets/fonts/static/Inter-Bold.ttf);
 }
 
 @font-face {
-  font-family: "Inter-ExtraBold";
-  src: local("Inter"), url(../public/assets/fonts/static/Inter-ExtraBold.ttf);
+    font-family: 'Inter-ExtraBold';
+    src: local('Inter'), url(../public/assets/fonts/static/Inter-ExtraBold.ttf);
 }
 
 html {
-  font-size: 15px;
-  font-family: "Inter-Regular";
+    font-size: 15px;
+    font-family: 'Inter-Regular';
 }
 
 .body {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4rem;
-  margin-bottom:4rem;
-  margin-left: 10rem;
-  margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 /* Header  */
 .header {
-  display: flex;
-  justify-content: space-between;
-  font-family: 'Inter-Bold';
-  margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter-Regular';
+    font-weight: 600;
+    margin-bottom: 3rem;
 }
 
 .header ul {
-  display: flex;
+    display: flex;
 }
 
 .header li {
-  margin-left: 4rem;
-  list-style: none;
+    margin-left: 4rem;
+    list-style: none;
 }
 
 .header a {
-  text-decoration: none;
-  color: var(--dark-grayish-blue);
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+.header a:hover {
+    color: var(--soft-red);
 }
 
 /* MainCard */
 .mainCard {
-  display: flex;
-  flex-direction: column;
-  width: 65%;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
 }
 
 .mainCard img {
-  width: 800px;
+    width: 800px;
 }
 
 .mainCard-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .mainCard-text h1 {
-  font-size: 4.5rem;
-  font-family: 'Inter-ExtraBold';
-  color: var(--dark-blue);
-  line-height: 1;
-  padding: 0;
-  flex: 1;
-  margin-bottom: 0;
+    font-size: 4.5rem;
+    font-family: 'Inter-ExtraBold';
+    color: var(--dark-blue);
+    line-height: 1;
+    padding: 0;
+    flex: 1;
+    margin-bottom: 0;
 }
 
 .mainCard-text h1,
 .mainCard-text p {
-  margin-top: 3rem;
-  margin-right: -100px;
+    margin-top: 3rem;
+    margin-right: -100px;
 }
 
 .mainCard-text p {
-  color: var(--dark-grayish-blue);
-  line-height: 1.8;
-  width: 350px;
-  margin-bottom: 50px;
+    color: var(--dark-grayish-blue);
+    line-height: 1.8;
+    width: 350px;
+    margin-bottom: 50px;
 }
 
 .mainCard-text div {
-  margin: 0;
-  flex: 1;
-  padding-right: 0;
-  padding-left: 155px;
+    margin: 0;
+    flex: 1;
+    padding-right: 0;
+    padding-left: 155px;
 }
 
 .mainCard button {
-  width: 200px;
-  height: 50px;
-  border: none;
-  background-color: var(--soft-red);
-  color: var(--off-white);
-  font-family: 'Inter-Bold';
-  letter-spacing: 4px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    font-family: 'Inter-Bold';
+    letter-spacing: 4px;
+}
+
+.mainCard button:hover {
+    background-color: var(--dark-blue);
 }
 
 .lead {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
 }
 
 /* Sidebar */
 .sidebar {
-  background-color: var(--dark-blue);
-  color: var(--off-white);
-  width: 25%;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    background-color: var(--dark-blue);
+    color: var(--off-white);
+    width: 25%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .sidebar h2 {
-  color: var(--soft-orange);
-  font-size: 3rem;
-  font-family: 'Inter-ExtraBold';
+    color: var(--soft-orange);
+    font-size: 3rem;
+    font-family: 'Inter-ExtraBold';
 }
 
 .sidebar h2,
 .sidebar p {
-  margin: 0;
+    margin: 0;
 }
 
 .sidebar h3 {
-  font-family: 'Inter-ExtraBold';
-  font-size: 1.3rem;
-  margin: 0;
-  margin-bottom: -1rem;
+    font-family: 'Inter-ExtraBold';
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: -1rem;
+}
+
+.sidebar h3:hover {
+    color: var(--soft-orange);
 }
 
 .sidebar p {
-  line-height: 2;
-  
+    line-height: 2;
 }
 
 .sidebar span {
-  border-bottom: solid 1px var(--off-white);
+    border-bottom: solid 1px var(--off-white);
 }
 
 .sidebar,
 .sidebar p:last-of-type {
-  border: none;
+    border: none;
 }
 
 /* Footer */
 .footer {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-card {
-  display: flex;
-  width: 30%;
+    display: flex;
+    width: 30%;
 }
 
 .footer-card img {
-  width: 120px;
-  margin-right: 1.5rem;
+    width: 120px;
+    margin-right: 1.5rem;
 }
 
 .footer-card-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 225px;
 }
 
 .footer-card-text h2 {
-  font-family: 'Inter-Bold';
-  font-size: 1.8rem;
-  color: var(--grayish-blue);
-  margin: 0;
+    font-family: 'Inter-Bold';
+    font-size: 1.8rem;
+    color: var(--grayish-blue);
+    margin: 0;
 }
 
 .footer-card-text h3 {
-  font-family: 'Inter-ExtraBold';
-  font-size: 1.2rem;
-  color: var(--dark-blue);
-  margin: 0;
+    font-family: 'Inter-ExtraBold';
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+.footer-card-text h3:hover {
+    color: var(--soft-red);
 }
 
 .footer-card-text p {
-  color: var(--dark-grayish-blue);
-  line-height: 2;
-  margin: 0;
-  width: 225px;
+    color: var(--dark-grayish-blue);
+    line-height: 2;
+    margin: 0;
+    width: 225px;
 }
