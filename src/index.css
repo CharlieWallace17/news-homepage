@@ -38,14 +38,20 @@
         margin: 0;
     }
 
-    .header svg {
+    .header svg.icon {
         padding-left: 2rem;
+    }
+
+    .header svg.menu {
+        display: block !important;
+        padding-right: 2rem;
+        height: 40px;
     }
 
     .header ul,
     .header li,
     .header a {
-        display: none;
+        display: none !important;
     }
 
     .mainCard h1 {
@@ -122,6 +128,10 @@ html {
 
 .header a:hover {
     color: var(--soft-red);
+}
+
+.header svg.menu {
+    display: none;
 }
 
 /* MainCard */
